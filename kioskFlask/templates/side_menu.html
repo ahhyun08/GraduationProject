@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>menu</title>
+        <link
+            href="{{ url_for('static',filename='css/menu.css')}}"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <div class="categoryBox">
+            <div class="home">
+                <img
+                    src="{{url_for('static', filename='images/icons/home.png')}}"
+                    alt="home"
+                    onclick="location.href='/'"
+                />
+            </div>
+            <div class="return">
+                <img
+                    src="{{url_for('static', filename='images/icons/back.png')}}"
+                    alt="back"
+                    onclick="location.href='/burgers'"
+                />
+            </div>
+            <div class="categoryName">BURGER</div>
+            <div class="next">
+                <img
+                    src="{{url_for('static', filename='images/icons/next.png')}}"
+                    alt="next"
+                    onclick="location.href='/drinks'"
+                />
+            </div>
+        </div>
+        <hr />
+        <div class="main">
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/sides/fries.png')}}"
+                        alt="french fries"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">감자튀김</div>
+                    <div class="menuInfo" id="menuCost">2,000</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/sides/nugget.png')}}"
+                        alt="nugget"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">너겟</div>
+                    <div class="menuInfo" id="menuCost">2,000</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/sides/eggTart.png')}}"
+                        alt="egg tart"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">에그 타르트</div>
+                    <div class="menuInfo" id="menuCost">1,500</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/sides/cheeseStick.png')}}"
+                        alt="cheese stick"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">치즈스틱</div>
+                    <div class="menuInfo" id="menuCost">1,500</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/sides/onionLing.png')}}"
+                        alt="onion ring"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">어니언 링</div>
+                    <div class="menuInfo" id="menuCost">2,000</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

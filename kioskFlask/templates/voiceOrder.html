@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static',filename='css/voiceOrder.css')}}"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="voiceOrder">
+                <div class="voiceOrder" id="home">
+                    <img
+                        src="{{url_for('static', filename='images/icons/home.png')}}"
+                        onclick="location.href='/'"
+                    />
+                </div>
+                <div class="voiceOrder" id="voiceOrderName">음성주문</div>
+            </div>
+            <hr />
+            <div class="voiceOrder" id="chatBox"></div>
+            <div class="voiceOrder" id="mice">
+                <img
+                    src="{{url_for('static', filename='images/icons/mic.png')}}"
+                />
+            </div>
+        </div>
+    </body>
+</html>

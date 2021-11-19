@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/index.css') }}"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>order method</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="normal">
+                <input
+                    type="button"
+                    value="일반 주문"
+                    onclick="location.href='/burgers'"
+                />
+            </div>
+
+            <div id="voice">
+                <input
+                    type="button"
+                    value="음성 주문"
+                    onclick="location.href='/voiceOrder'"
+                />
+            </div>
+        </div>
+    </body>
+</html>

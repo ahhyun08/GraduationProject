@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>menu</title>
+        <link
+            href="{{ url_for('static',filename='css/menu.css')}}"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <div class="categoryBox">
+            <div class="home">
+                <img
+                    src="{{url_for('static', filename='images/icons/home.png')}}"
+                    alt="home"
+                    onclick="location.href='/'"
+                />
+            </div>
+            <div class="return">
+                <img
+                    src="{{url_for('static', filename='images/icons/back.png')}}"
+                    alt="back"
+                    onclick="location.href='/'"
+                />
+            </div>
+            <div class="categoryName">BURGER</div>
+            <div class="next">
+                <img
+                    src="{{url_for('static', filename='images/icons/next.png')}}"
+                    alt="next"
+                    onclick="location.href='/sides'"
+                />
+            </div>
+        </div>
+        <hr />
+        <div class="main">
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/burgers/bulgogi.png')}}"
+                        alt="bulgogi"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">불고기버거</div>
+                    <div class="menuInfo" id="menuCost">3,000</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/burgers/shrimp.png')}}"
+                        alt="shrimp"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">새우버거</div>
+                    <div class="menuInfo" id="menuCost">3,500</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/burgers/cheese.png')}}"
+                        alt="cheese"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">치즈버거</div>
+                    <div class="menuInfo" id="menuCost">2,500</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/burgers/chicken.png')}}"
+                        alt="chicken"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">치킨버거</div>
+                    <div class="menuInfo" id="menuCost">3,000</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="menuImage">
+                    <img
+                        src="{{url_for('static', filename='images/burgers/vege.png')}}"
+                        alt="veggie"
+                    />
+                </div>
+                <div class="menuInfo">
+                    <div class="menuInfo" id="menuName">베지버거</div>
+                    <div class="menuInfo" id="menuCost">2,500</div>
+                </div>
+                <div class="menuCount">
+                    <div class="menuCount" id="minus">
+                        <input type="button" value="-" />
+                    </div>
+                    <div class="menuCount" id="count">
+                        <input type="button" />
+                    </div>
+                    <div class="menuCount" id="plus">
+                        <input type="button" value="+" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
